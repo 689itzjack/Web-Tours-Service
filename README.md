@@ -1,1 +1,1 @@
-# api-server-starter
+Creation of a travel Web Site written in JavaScript, CSS, and HTML connected with the Mongo DB, using new technologies as ajax and Node.JS and the library  j-query of JavaScript. The web site allows the user to buy a tour in worldwide having the possibility to select the guide and to see the information guide trajectory. The information given to the user and selected by him, will be stored at the MongoDB.
