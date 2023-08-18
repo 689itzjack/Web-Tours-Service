@@ -1,0 +1,89 @@
+<!-- index.html -->
+<!doctype html5>
+<html>
+<head>
+    <title>ADD New Tour</title>
+    <link href="/css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"><!--teina shel css jitzoni-->
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN --><!--teina shel jquery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script><!--teina shel jquery nosaf she mishtamshim bo kedei lasot validatziot be ikar betofasim(docs)-->
+    <script src="/js/user_utils.js">
+    </script> <!-- load our javascript file --><!--teina shel hakovetz user_utils.js she betoj haproyect shelano-->
+    <!--we must to be carefull because in line 11 we must to put the name of the route in the browser and not the name of the file path-->
+</head>
+<!--******************************************DUCUMENT'S PART***************************************************-->
+<body style="background-color: rgb(71, 71, 71);">
+    
+    <header><h1>Add new Tour</h1></header>
+    <div >
+        
+        
+
+        <!-- OUR FORM -->
+        <form id="user_form" name="user_form" method="POST">
+
+            <!-- NAME Tour-->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="nameTour"><p class="titles_addUsr">Name Tour:</p> </label>
+                <input type="text" class="form-control" name="nameTour" id="nameTour" placeholder="write name Tour here" required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- START TOUR -->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="starTour"><p class="titles_addUsr">The Tour starts:</p></label>
+                <input type="date" class="form-control" name="starTour" id="starTour" value="" required><!--cuando ponemos en el sade de id p.e, "required" significa que el sade que hay que rellenar es joba, es decir que
+                    no podemos mandar el tofes sin rellenar el sade-->
+                <!-- errors will go here -->
+            </div>
+
+            <!-- DURATION -->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="duration"><p class="titles_addUsr">Duration Tour: </p></label>
+                <input type="text" class="form-control" name="duration" id="duration" placeholder="write the duration Tour here" required>
+                <!-- errors will go here -->
+            </div>
+
+
+            <!-- Price tour -->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="price"><p class="titles_addUsr">Price Tour: </p></label>
+                <input type="text" class="form-control" name="price" id="price" placeholder="write the price Tour here" required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- GUIDE -->
+            <div id="name-group" for="nameGuide" class="col-sm-5 col-sm-offset-3">
+                <label for="guide"><p class="titles_addUsr">Data Guide:</p></label>
+                <input type="text" class="form-control" id="nameGuide" name="nameGuide" placeholder="Insert the name's guide" required><br>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Insert the mail adress guide usr@mail.com" required><br>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Insert the number's phone guide" required>
+                <!--errors will go here  -->
+            </div>
+            
+            <!--PATHS-->
+            <div id="name-group" for="pathName" class="col-sm-5 col-sm-offset-3">
+                <label for="pathName"><p class="titles_addUsr">Paths:</p></label>
+                <input type="text" class="form-control" id="pathName" name="pathName" placeholder="Insert name's Path" required><br>
+                <input type="text" class="form-control" id="country" name="country" placeholder="Insert name's country Path" required><br>
+                <!--errors will go here  -->
+            </div>
+
+            <div class="col-sm-4 col-sm-offset-3">
+                <br/>
+                <button type="submit" class="botones" id="submit">Submit <span class="fa fa-arrow-right"></span></button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
+<!--NOTE: cuando trabajo sobre contenido de validatzia(contenido enviadoo por un tofes) siempre se lleva a cabo en dos lugares
+1: En el front (del lado del cliente) el archivo html de JS porque p/e: si el usuario metio un nobre demasiado corto
+    y los nombres requeridos en el programa deben ser con mas de 8 letras en tonces envio un mesje que el nombre requerido debe ser mas  de 8 letras
+2: En el servidor, porque en el servidor revisamos la informacion si se envio como es requerida.
+Se revisa de ambos lados a causa de los problemas de abtaja meida
+-->

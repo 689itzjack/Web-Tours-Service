@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!doctype html5>
+<html>
+<head>
+    <title>Update Tour</title>
+    <link href="/css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"><!--teina shel css jitzoni-->
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN --><!--teina shel jquery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script><!--teina shel jquery nosaf she mishtamshim bo kedei lasot validatziot be ikar betofasim(docs)-->
+    <script src="/js/tours_utils.js">
+    </script> <!-- load our javascript file --><!--teina shel hakovetz user_utils.js she betoj haproyect shelano-->
+    <!--we must to be carefull because in line 11 we must to put the name of the route in the browser and not the name of the file path-->
+</head>
+<!--******************************************DUCUMENT'S PART***************************************************-->
+<body style="background-color: rgb(71, 71, 71);">
+    
+    <header><h1>Update Tour</h1></header>
+    <div >
+
+        <!-- OUR FORM -->
+        <form id="user_form" name="user_form" method="PUT">
+
+            <!-- NAME Tour-->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="nameTour"><p class="titles_addUsr">Name Tour:</p> </label>
+                <input type="text" class="form-control" name="nameTour" id="nameTour" placeholder="write name Tour here" required>
+                <!-- errors will go here -->
+            </div>
+
+            <!-- START TOUR -->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="starTour"><p class="titles_addUsr">The Tour starts:</p></label>
+                <input type="date" class="form-control" name="starTour" id="starTour" value="" >
+                <!-- errors will go here -->
+            </div>
+
+            <!-- DURATION -->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="duration"><p class="titles_addUsr">Duration Tour: </p></label>
+                <input type="text" class="form-control" name="duration" id="duration" placeholder="write the duration Tour here">
+                <!-- errors will go here -->
+            </div>
+
+
+            <!-- Price tour -->
+            <div id="name-group" class="col-sm-6 col-sm-offset-3">
+                <label for="price"><p class="titles_addUsr">Price Tour: </p></label>
+                <input type="text" class="form-control" name="price" id="price" placeholder="write the price Tour here" >
+                <!-- errors will go here -->
+            </div>
+
+            <!-- GUIDE -->
+            <div id="name-group" for="nameGuide" class="col-sm-5 col-sm-offset-3">
+                <label for="guide"><p class="titles_addUsr">Data Guide:</p></label>
+                <input type="text" class="form-control" id="nameGuide" name="nameGuide" placeholder="Insert the name's guide"><br>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Insert the mail adress guide usr@mail.com"><br>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Insert the number's phone guide">
+                <!--errors will go here  -->
+            </div>
+
+            <div class="col-sm-4 col-sm-offset-3">
+                <br/>
+                <button type="submit" class="botones" id="submit">Submit <span class="fa fa-arrow-right"></span></button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

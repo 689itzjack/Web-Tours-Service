@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!doctype html5>
+<html>
+<head>
+    <title>Delete Tour</title>
+    <link href="/css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"><!--teina shel css jitzoni-->
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN --><!--teina shel jquery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script><!--teina shel jquery nosaf she mishtamshim bo kedei lasot validatziot be ikar betofasim(docs)-->
+    <script src="/js/delete_Tour_utils.js">
+    </script> <!-- load our javascript file --><!--teina shel hakovetz user_utils.js she betoj haproyect shelano-->
+    <!--we must to be carefull because in line 11 we must to put the name of the route in the browser and not the name of the file path-->
+</head>
+<!--******************************************DUCUMENT'S PART***************************************************-->
+<body style="background-color: rgb(71, 71, 71);">
+    
+    <header><h1>Delete Tour</h1></header>
+    <div >
+
+        <!-- OUR FORM -->
+        <form id="user_form" name="user_form" method="DELETE">
+
+            <!-- NEW PATH -->
+            <div id="name-group" class="col-sm-5 col-sm-offset-3">
+                <label for="nameTour"><p class="titles_addUsr">Delete Tour:</p> </label>
+                <input type="text" class="form-control" name="nameTourDelete" id="nameTourDelete" placeholder="Write name's Tour" required><br>
+                <hr class="separadores"/>
+                
+            </div>
+
+            <div class="col-sm-4 col-sm-offset-3">
+                <br/>
+                <button type="submit" class="botones" id="submit">Delete <span class="fa fa-arrow-right"></span></button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
